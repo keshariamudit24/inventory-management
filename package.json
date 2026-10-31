@@ -1,0 +1,23 @@
+{
+  "name": "inventory-management",
+  "version": "1.0.0",
+  "description": "Inventory Management System with an end-to-end DevOps pipeline",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node --test",
+    "db:push": "prisma db push"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "express": "^5.0.0",
+    "prisma": "^6.0.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
